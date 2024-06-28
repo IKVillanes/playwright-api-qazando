@@ -3,7 +3,7 @@ const { test, expect, request } = require('@playwright/test');
 
 var tokenReceived
 
-test('gerando un token', async ({request}) => {
+test('gerando un token @regressivo', async ({request}) => {
   const response = await request.post('/auth', {
     data: {
       "username" : "admin2",
