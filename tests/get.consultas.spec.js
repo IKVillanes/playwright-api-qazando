@@ -2,7 +2,7 @@
 const { test, expect, request } = require('@playwright/test');
 
 
-test('consultando reservas cadastradas', async ({ request }) => {
+test('consultando reservas cadastradas @consultas', async ({ request }) => {
 
   const response = await request.get('/booking');
   console.log(await response.json())
